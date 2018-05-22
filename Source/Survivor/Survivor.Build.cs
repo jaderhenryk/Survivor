@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class Survivor : ModuleRules
 {
-	public Survivor(TargetInfo Target)
+	public Survivor(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "AIModule", "GameplayTasks" });
 	}
